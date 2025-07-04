@@ -13,7 +13,7 @@ const UnderlinedButton = ({ children, onClick, selected = false }: UnderlinedBut
     return (
         <div className="underlined-button-container">
             <button
-                className={`underlined-button ${selected ? 'selected' : ''}`}
+                className={`underlined-button${true && '-dark'} ${selected ? 'selected' : ''}`}
                 onClick={onClick}
             >
                 {children}

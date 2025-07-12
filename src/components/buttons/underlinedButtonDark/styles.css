@@ -1,0 +1,42 @@
+.underlined-dark-button-container {
+    display: inline-block;
+    position: relative;
+}
+
+.underlined-dark-button {
+    background: none;
+    border: none;
+    color: #535353;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    letter-spacing: 0.5px;
+}
+
+.underlined-dark-button:hover {
+    color: black;
+}
+
+.underlined-dark-button.selected {
+    color: black;
+}
+
+.underline-dark.selected {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #EBFF08;
+    transition: background-color 0.2s ease;
+}
+
+.underlined-dark-button:hover + .underline {
+    background-color: #EBFF08;
+}
+
+

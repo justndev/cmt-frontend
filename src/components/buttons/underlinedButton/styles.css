@@ -1,0 +1,45 @@
+.underlined-button-container {
+    display: inline-block;
+    position: relative;
+}
+
+.underlined-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.underlined-button:hover {
+    color: #EBFF08;
+}
+
+.underlined-button.selected {
+    color: #EBFF08;
+}
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #EBFF08;
+    transition: background-color 0.2s ease;
+}
+
+.underlined-button:hover + .underline {
+    background-color: white;
+}
+
+.underline.selected {
+    background-color: white;
+}
